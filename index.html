@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+
+  <section class="element">
+    <div class="element__head">
+      <h1 class="element__title">
+        Simple, traffic-based pricing
+      </h1>
+      <p class="element__text">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card__inner">
+
+        <div class="card__header">
+          <h3 class="card__views">
+            100k Pageviews
+          </h3>
+          <h2 class="card__price" id="price">
+            $16.00
+          </h2>
+          <span class="card__price--smaller">
+            /month
+          </span>
+          <input class="card__range" type="range" id="range" min="0" max="30" step="1" value="16">
+        </div>
+
+        <div class="card__main">
+          <p class="card__text">
+            Monthly Billing
+          </p>
+          <label for="switch">
+            <input type="checkbox" name="switch">
+            <span class="slider"></span>
+          </label>
+          <p class="card__text card__text--after">
+            Yearly Billing
+          </p>
+        </div>
+
+        <div class="card__footer">
+          <div class="card__list">
+            <p class="card__features">Unlimited websites</p>
+            <p class="card__features">100% data ownership</p>
+            <p class="card__features">Email reports</p>
+          </div>
+          <button class="card__btn" type="button">
+            Start my trial
+          </button>
+        </div>
+
+      </div><!-- /.card__inner -->
+    </div><!-- /.card -->
+  </section><!-- /.element -->
+
+  <script src="app.js"></script>
+</body>
+
+</html>
