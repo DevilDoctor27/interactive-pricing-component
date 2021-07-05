@@ -35,16 +35,20 @@
           <span class="card__price--smaller">
             /month
           </span>
-          <input class="card__range" type="range" id="range" min="0" max="30" step="1" value="16">
+
+          <div class="slider-container">
+            <span class="slider__bar"><span class="slider__fill"></span></span>
+            <input class="slider" type="range" id="range" min="0" max="30" step="1" value="16">
+          </div>
         </div>
 
         <div class="card__main">
           <p class="card__text">
             Monthly Billing
           </p>
-          <label for="switch">
-            <input type="checkbox" name="switch">
-            <span class="slider"></span>
+          <label for="switch" class="card__switch">
+            <input type="checkbox" name="switch" class="card__switch--item">
+            <div class="card__switch--custom"></div>
           </label>
           <p class="card__text card__text--after">
             Yearly Billing
